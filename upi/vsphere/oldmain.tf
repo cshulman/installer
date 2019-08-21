@@ -27,6 +27,7 @@ module "resource_pool" {
 module "bootstrap" {
   source = "./machine_bs"
 
+  
   name             = "bootstrap"
   instance_count   = "${var.bootstrap_complete ? 0 : 1}"
   ignition_url     = "${var.bootstrap_ignition_url}"

@@ -31,7 +31,7 @@ resource "vsphere_virtual_machine" "vm" {
   network_interface {
     network_id = "${data.vsphere_network.network.id}"
     use_static_mac = "true"
-    mac_address = "00:50:56:9b:40:2${count.index}"
+    mac_address = "00:50:56:9b:40:0${count.index}"
   }
 
   disk {
