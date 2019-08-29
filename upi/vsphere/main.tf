@@ -81,15 +81,17 @@ module "compute" {
   machine_cidr     = "${var.machine_cidr}"
 }
 
-module "dns" {
-  source = "./route53"
+// commenting dns module for this install
 
-  base_domain         = "${var.base_domain}"
-  cluster_domain      = "${var.cluster_domain}"
-  bootstrap_count     = "${var.bootstrap_complete ? 0 : 1}"
-  bootstrap_ips       = ["${module.bootstrap.ip_addresses}"]
-  control_plane_count = "${var.control_plane_count}"
-  control_plane_ips   = ["${module.control_plane.ip_addresses}"]
-  compute_count       = "${var.compute_count}"
-  compute_ips         = ["${module.compute.ip_addresses}"]
-}
+// module "dns" {
+//   source = "./route53"
+//
+//  base_domain         = "${var.base_domain}"
+//  cluster_domain      = "${var.cluster_domain}"
+//  bootstrap_count     = "${var.bootstrap_complete ? 0 : 1}"
+//  bootstrap_ips       = ["${module.bootstrap.ip_addresses}"]
+//  control_plane_count = "${var.control_plane_count}"
+//  control_plane_ips   = ["${module.control_plane.ip_addresses}"]
+//  compute_count       = "${var.compute_count}"
+//  compute_ips         = ["${module.compute.ip_addresses}"]
+// }
