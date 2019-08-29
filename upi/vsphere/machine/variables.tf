@@ -36,6 +36,10 @@ variable "cluster_domain" {
   type = "string"
 }
 
+variable "dns1" {
+  type = "string"
+}
+
 variable "datacenter_id" {
   type = "string"
 }
