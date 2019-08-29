@@ -1,1 +1,7 @@
 /bin/
+
+
+/upi/vsphere/.terraform/*
+/upi/vsphere/terraform.tfvars
+/upi/vsphere/terraform.tfstate
+/upi/vsphere/terraform.tfstate.backup
