@@ -28,6 +28,9 @@ vsphere_datastore = "nvme-ds1"
 // Name of the VM template to clone to create VMs for the cluster. The dev cluster has a template named "rhcos-latest".
 vm_template = "rhcos-latest"
 
+// Name of the network to use in the VM cluster
+vm_network = "name of vm network"
+
 // The machine_cidr where IP addresses will be assigned for cluster nodes.
 // Additionally, IPAM will assign IPs based on the network ID. 
 machine_cidr = "10.0.0.0/24"

@@ -37,6 +37,7 @@ PREFIX=${local.mask}
 GATEWAY=${local.gw}
 DOMAIN=${var.cluster_domain}
 DNS1=${local.dns1}
+IPV6INIT=no
 EOF
   }
 }
